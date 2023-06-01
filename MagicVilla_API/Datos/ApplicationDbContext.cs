@@ -11,6 +11,7 @@ namespace MagicVilla_API.Datos
         }
 
         public DbSet<Villa> Villas { get; set; }//---> Aclaramos que nuestro modelo Villa de tipo DbSet se va a crear como tabla en la BD.
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)//---> Agrego datos a mano.
